@@ -34,3 +34,5 @@ Node.js,Express.js,mongoose,socket.io
 
 - this is single page website to perform any crud user need to register and signup 
 - for better understanding of apis refer to backend readme file there is a api documnetation
+
+- a short Video link of website demonstration `https://drive.google.com/file/d/1omLJyudqEb91cQ42OEprGy2XZUNZ0Kms/view?usp=sharing`

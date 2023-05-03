@@ -110,7 +110,7 @@ async function RegisterApi(obj){
         let result=await response.json();
         console.log(result.msg);
         alert(result.msg)
-        window.location.href="./index.html"
+        // window.location.href="./index.html"
     } catch (error) {
         
     }
