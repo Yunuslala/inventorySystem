@@ -10,29 +10,25 @@ Node.js,Express.js,mongoose,socket.io
   <br>
   
   <h2>Version of npm packages used:</h2>
- {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+
     "bcrypt": "^5.1.0",
+    <br>
     "cors": "^2.8.5",
+    <br>
     "dotenv": "^16.0.3",
+    <br>
     "express": "^4.18.2",
+    <br>
     "jsonwebtoken": "^9.0.0",
+    <br>
     "mongoose": "^7.1.0",
+    <br>
     "nodemon": "^2.0.22",
+    <br>
     "socket.io": "^4.6.1"
-  }
-}
+    <br>
+  
+
 
 ## overview 
 
