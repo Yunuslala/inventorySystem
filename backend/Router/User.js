@@ -32,6 +32,7 @@ UserRouter.post("/user/login",loginvalidator,async(req,res)=>{
     try {
         let {email,password}=req.body;
         let findUser=await UserModel.find({email});
+        console.log(findUser);
         if(!findUser){
             res.status(404).send({"msg":" you have not registered or give wrong credetials"})
         }else{

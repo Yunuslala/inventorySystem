@@ -4,7 +4,7 @@ const RegistrationValidation=async(req,res,next)=>{
     const data=req.body;
     console.log(data);
     if(!data.name || !data.age || !data.email || !data.password){
-        res.status(400).send({ msg: `Please provide name,  email & Password`});
+        res.status(400).send({ msg: `Please provide name, age, email & Password`});
     }else {
         console.log("obj");
         let findUser=await UserModel.find({email:data.email});

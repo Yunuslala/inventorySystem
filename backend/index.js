@@ -1,9 +1,11 @@
 const express=require("express");
-const app=express();
-const {InventoryRouter}=require("./Router/Inventory");
+
+const {InventoryRouter,server,app}=require("./Router/Inventory");
 const {UserRouter}=require("./Router/User")
 const {connection}=require("./Config/db")
 const cors=require("cors");
+
+
 app.use(cors());
 app.get("/",(req,res)=>{
     res.send("hii welcome")
@@ -13,12 +15,7 @@ app.use(UserRouter);
 app.use(InventoryRouter);
 
 
-
-
-
-
-
-app.listen(process.env.port,async()=>{
+server.listen(process.env.port,async()=>{
     try {
         await connection
         console.log("db is connected");
@@ -27,6 +24,7 @@ app.listen(process.env.port,async()=>{
     }
     console.log(`http://localhost:${process.env.port}`);
 })
+
 
 
 

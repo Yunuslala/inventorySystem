@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventory App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Welcome to Inventory System</h1>
+
+    <div id="showbtn">
+        <button id="DashBoard">Inventory DashBoard</button>
+        <button onClick="RegstrationButton()" id="Change">SignIn</button>    
+    </div>
+   
+    <div id="Register">
+        <form action="" id="Signup">
+            <input type="text" placeholder="name" id="name">
+            <input type="text" placeholder="age" id="age">
+            <input type="text" placeholder="email" id="email">
+            <input type="password" placeholder="password" id="password">
+            <input type="submit" class="submit">
+        </form>
+    </div>
+
+
+    <div id="inventoryDashboard">
+        <div id="PostFrom"> 
+
+        </div>
+        <div id="Items">
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+   
+</body>
+</html>
+<script src="./Index.js"></script>
